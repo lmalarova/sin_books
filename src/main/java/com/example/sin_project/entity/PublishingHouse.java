@@ -4,25 +4,26 @@ import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
 
 @Getter
 @Setter
-public class Author {
-
-    @Column
+public class PublishingHouse {
+    @Column(unique = true)
+    @NotNull
     @Id
     protected Long id;
-    @NotNull
-    private String firstName;
-    private String surName;
-    private String email;
+
+    private String name;
 
     @OneToMany
-    List<Book> books;
+    private List<Book> books;
 
     @OneToMany
     List<Contract> contracts;
