@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface PublishingHouseRepository extends CrudRepository<PublishingHouse, Long> {
     List<PublishingHouse> findAll();
+    PublishingHouse getById(Long id);
 }

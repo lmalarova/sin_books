@@ -1,24 +1,22 @@
 package com.example.sin_project.entity;
 
+import com.example.sin_project.dto.request.AuthorRequest;
 import com.sun.istack.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Entity
 
 @Getter
 @Setter
-public class Author {
-
-    @Column
-    @Id
-    protected Long id;
+@NoArgsConstructor
+public class Author extends AbstractEntity {
     @NotNull
-    private String firstName;
-    private String surName;
     private String email;
 
     @OneToMany
@@ -26,4 +24,11 @@ public class Author {
 
     @OneToMany
     List<Contract> contracts;
+
+    public Author(AuthorRequest request) {
+        this();
+        this.name = request.getName();
+        this.email = request.getEmail();
+    }
+
 }

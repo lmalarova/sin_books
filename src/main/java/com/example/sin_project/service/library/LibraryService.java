@@ -1,11 +1,11 @@
 package com.example.sin_project.service.library;
 
-import com.example.sin_project.entity.Book;
+import com.example.sin_project.dto.request.LibraryRequest;
+import com.example.sin_project.dto.request.BookIdRequest;
 import com.example.sin_project.entity.Library;
-
-import java.util.List;
 
 public interface LibraryService {
     Library findById(Long id);
-    List<Book> addBook(Book book);
+    Library create(LibraryRequest request);
+    Library addBook(Long libraryId, BookIdRequest request);
 }

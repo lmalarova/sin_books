@@ -1,5 +1,7 @@
 package com.example.sin_project.entity;
 
+import com.example.sin_project.dto.request.ContractRequest;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,23 +14,19 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Contract {
-    @Column(unique = true)
-    @NotNull
-    @Id
-    protected Long id;
-
+public class Contract extends AbstractEntity {
+    @JsonIgnore
     @ManyToOne
     private Author author;
 
+    @JsonIgnore
     @ManyToOne
     private PublishingHouse publishingHouse;
 
     private String content;
 
     public Contract(ContractRequest request) {
-        this.author = request.getAuthor();
-        this.publishingHouse = request.getPublishingHouse();
+        this.name = request.getName();
         this.content = request.getContent();
     }
 }

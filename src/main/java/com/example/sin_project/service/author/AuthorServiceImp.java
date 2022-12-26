@@ -1,10 +1,11 @@
 package com.example.sin_project.service.author;
 
+import com.example.sin_project.dto.request.AuthorRequest;
+import com.example.sin_project.dto.request.ContractRequest;
 import com.example.sin_project.entity.*;
 import com.example.sin_project.exception.FieldMissingException;
 import com.example.sin_project.exception.NotFoundException;
 import com.example.sin_project.repository.AuthorRepository;
-import com.example.sin_project.service.publishingHouse.PublishingHouseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +24,24 @@ public class AuthorServiceImp implements AuthorService {
     @Override
     public Author findById(Long id){
         if(id == null)
-            throw new FieldMissingException();
-        return authorRepository.findById(id).orElseThrow(NotFoundException::new);
+            throw new FieldMissingException("ID_MISSING");
+        return authorRepository.findById(id).orElseThrow(() -> new NotFoundException("AUTHOR_NOT_FOUND"));
     }
 
     @Override
-    public List<Book> addBook(Book book) {
+    public Author create(AuthorRequest request) {
+        return authorRepository.save(new Author(request));
+    }
+
+    @Override
+    public List<Book> addBookToAuthor(Book book) {
+        if(book == null) {
+            throw new FieldMissingException("BOOK_MISSING");
+        }
         Author author = book.getAuthor();
+        if(author == null) {
+            throw new NotFoundException("AUTHOR_NOT_FOUND");
+        }
         if(author.getBooks() == null){
             author.setBooks(new ArrayList<>());
         }
@@ -42,6 +54,9 @@ public class AuthorServiceImp implements AuthorService {
     public void addContract(Contract contract) {
         Author author = contract.getAuthor();
 
+        if(author == null) {
+            throw new NotFoundException("AUTHOR_NOT_FOUND");
+        }
         if(author.getContracts() == null) {
             author.setContracts(new ArrayList<>());
         }

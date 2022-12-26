@@ -1,27 +1,24 @@
 package com.example.sin_project.entity;
 
-import com.sun.istack.NotNull;
+import com.example.sin_project.dto.request.LibraryRequest;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
 
 @Getter
 @Setter
-public class Library {
-    @Column(unique = true)
-    @NotNull
-    @Id
-    protected Long id;
-
-    private String name;
-
+@NoArgsConstructor
+public class Library extends AbstractEntity {
     @OneToMany
     private List<Book> books;
+
+    public Library(LibraryRequest request) {
+        this();
+        this.name = request.getName();
+    }
 }

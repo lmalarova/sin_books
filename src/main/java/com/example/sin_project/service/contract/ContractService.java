@@ -1,11 +1,11 @@
 package com.example.sin_project.service.contract;
 
 import com.example.sin_project.entity.Contract;
-import com.example.sin_project.entity.ContractRequest;
-
-import java.util.List;
+import com.example.sin_project.dto.request.ContractRequest;
 
 public interface ContractService {
     Contract findById(Long id);
-    Contract signContract(ContractRequest request);
+    Contract create(ContractRequest request);
+    Contract findByAuthorAndPublishingHouse(Long authorId, Long publishingHouseId);
+    void save(Contract contract);
 }
