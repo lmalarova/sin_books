@@ -1,4 +1,4 @@
-package com.example.sin_project.conotroller.interceptors;
+package com.example.sin_project.controller.interceptors;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

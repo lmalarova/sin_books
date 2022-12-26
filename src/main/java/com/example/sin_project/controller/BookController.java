@@ -1,4 +1,4 @@
-package com.example.sin_project.conotroller;
+package com.example.sin_project.controller;
 
 import com.example.sin_project.dto.BookDTO;
 import com.example.sin_project.dto.DTOMapper;
