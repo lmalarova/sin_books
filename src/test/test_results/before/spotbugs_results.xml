@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="0" timestamp="1671988976640" analysisTimestamp="1671988978156" release="">
+  <Project projectName="SIN project">
+    <Jar>/Users/luciamalarova/IdeaProjects/SIN_project</Jar>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.conotroller.AuthorController">
+      <SourceLine classname="com.example.sin_project.conotroller.AuthorController" sourcefile="AuthorController.java" sourcepath="com/example/sin_project/conotroller/AuthorController.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.conotroller.AuthorController" name="&lt;init&gt;" signature="(Lcom/example/sin_project/service/author/AuthorService;Lcom/example/sin_project/dto/DTOMapper;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.conotroller.AuthorController" start="26" end="29" startBytecode="0" endBytecode="88" sourcefile="AuthorController.java" sourcepath="com/example/sin_project/conotroller/AuthorController.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.conotroller.AuthorController" name="authorService" signature="Lcom/example/sin_project/service/author/AuthorService;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.conotroller.AuthorController" sourcefile="AuthorController.java" sourcepath="com/example/sin_project/conotroller/AuthorController.java"/>
+    </Field>
+    <LocalVariable name="authorService" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.conotroller.AuthorController" start="27" end="27" startBytecode="6" endBytecode="6" sourcefile="AuthorController.java" sourcepath="com/example/sin_project/conotroller/AuthorController.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.conotroller.LibraryController">
+      <SourceLine classname="com.example.sin_project.conotroller.LibraryController" sourcefile="LibraryController.java" sourcepath="com/example/sin_project/conotroller/LibraryController.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.conotroller.LibraryController" name="&lt;init&gt;" signature="(Lcom/example/sin_project/service/library/LibraryService;Lcom/example/sin_project/dto/DTOMapper;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.conotroller.LibraryController" start="23" end="26" startBytecode="0" endBytecode="88" sourcefile="LibraryController.java" sourcepath="com/example/sin_project/conotroller/LibraryController.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.conotroller.LibraryController" name="libraryService" signature="Lcom/example/sin_project/service/library/LibraryService;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.conotroller.LibraryController" sourcefile="LibraryController.java" sourcepath="com/example/sin_project/conotroller/LibraryController.java"/>
+    </Field>
+    <LocalVariable name="libraryService" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.conotroller.LibraryController" start="24" end="24" startBytecode="6" endBytecode="6" sourcefile="LibraryController.java" sourcepath="com/example/sin_project/conotroller/LibraryController.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.conotroller.PublishingHouseController">
+      <SourceLine classname="com.example.sin_project.conotroller.PublishingHouseController" sourcefile="PublishingHouseController.java" sourcepath="com/example/sin_project/conotroller/PublishingHouseController.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.conotroller.PublishingHouseController" name="&lt;init&gt;" signature="(Lcom/example/sin_project/service/publishingHouse/PublishingHouseService;Lcom/example/sin_project/dto/DTOMapper;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.conotroller.PublishingHouseController" start="22" end="25" startBytecode="0" endBytecode="88" sourcefile="PublishingHouseController.java" sourcepath="com/example/sin_project/conotroller/PublishingHouseController.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.conotroller.PublishingHouseController" name="publishingHouseService" signature="Lcom/example/sin_project/service/publishingHouse/PublishingHouseService;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.conotroller.PublishingHouseController" sourcefile="PublishingHouseController.java" sourcepath="com/example/sin_project/conotroller/PublishingHouseController.java"/>
+    </Field>
+    <LocalVariable name="publishingHouseService" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.conotroller.PublishingHouseController" start="23" end="23" startBytecode="6" endBytecode="6" sourcefile="PublishingHouseController.java" sourcepath="com/example/sin_project/conotroller/PublishingHouseController.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.dto.AuthorDTO">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.AuthorDTO" name="clone" signature="()Lcom/example/sin_project/dto/AbstractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="27" end="27" startBytecode="0" endBytecode="50" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.AuthorDTO">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.AuthorDTO" name="getBooks" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="16" end="16" startBytecode="0" endBytecode="46" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.AuthorDTO" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="16" end="16" startBytecode="4" endBytecode="4" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.AuthorDTO">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.AuthorDTO" name="getContracts" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="17" end="17" startBytecode="0" endBytecode="46" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.AuthorDTO" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.AuthorDTO">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.AuthorDTO" name="setBooks" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="12" end="12" startBytecode="0" endBytecode="75" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.AuthorDTO" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Field>
+    <LocalVariable name="books" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="12" end="12" startBytecode="2" endBytecode="2" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.AuthorDTO">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.AuthorDTO" name="setContracts" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="12" end="12" startBytecode="0" endBytecode="75" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.AuthorDTO" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.AuthorDTO" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+    </Field>
+    <LocalVariable name="contracts" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.AuthorDTO" start="12" end="12" startBytecode="2" endBytecode="2" sourcefile="AuthorDTO.java" sourcepath="com/example/sin_project/dto/AuthorDTO.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.dto.BookDTO">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.BookDTO" name="clone" signature="()Lcom/example/sin_project/dto/AbstractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" start="40" end="40" startBytecode="0" endBytecode="50" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.BookDTO">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.BookDTO" name="getAuthor" signature="()Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" start="19" end="19" startBytecode="0" endBytecode="46" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.BookDTO" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.BookDTO" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.BookDTO">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.BookDTO" name="getPublishingHouse" signature="()Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" start="20" end="20" startBytecode="0" endBytecode="46" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.BookDTO" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.BookDTO" start="20" end="20" startBytecode="4" endBytecode="4" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.BookDTO">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.BookDTO" name="setAuthor" signature="(Lcom/example/sin_project/entity/Author;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" start="13" end="13" startBytecode="0" endBytecode="57" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.BookDTO" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Field>
+    <LocalVariable name="author" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.BookDTO" start="13" end="13" startBytecode="2" endBytecode="2" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.BookDTO">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.BookDTO" name="setPublishingHouse" signature="(Lcom/example/sin_project/entity/PublishingHouse;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" start="13" end="13" startBytecode="0" endBytecode="57" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.BookDTO" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.BookDTO" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+    </Field>
+    <LocalVariable name="publishingHouse" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.BookDTO" start="13" end="13" startBytecode="2" endBytecode="2" sourcefile="BookDTO.java" sourcepath="com/example/sin_project/dto/BookDTO.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.dto.ContractDTO">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.ContractDTO" name="clone" signature="()Lcom/example/sin_project/dto/AbstractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="24" end="24" startBytecode="0" endBytecode="50" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.ContractDTO">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.ContractDTO" name="getAuthor" signature="()Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="11" end="11" startBytecode="0" endBytecode="46" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.ContractDTO" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="11" end="11" startBytecode="4" endBytecode="4" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.ContractDTO">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.ContractDTO" name="getPublishingHouse" signature="()Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="12" end="12" startBytecode="0" endBytecode="46" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.ContractDTO" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="12" end="12" startBytecode="4" endBytecode="4" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.ContractDTO">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.ContractDTO" name="setAuthor" signature="(Lcom/example/sin_project/entity/Author;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="9" end="9" startBytecode="0" endBytecode="57" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.ContractDTO" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Field>
+    <LocalVariable name="author" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="9" end="9" startBytecode="2" endBytecode="2" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.ContractDTO">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.ContractDTO" name="setPublishingHouse" signature="(Lcom/example/sin_project/entity/PublishingHouse;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="9" end="9" startBytecode="0" endBytecode="57" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.ContractDTO" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Field>
+    <LocalVariable name="publishingHouse" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="9" end="9" startBytecode="2" endBytecode="2" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="com.example.sin_project.dto.DTOMapperImpl">
+      <SourceLine classname="com.example.sin_project.dto.DTOMapperImpl" sourcefile="DTOMapperImpl.java" sourcepath="com/example/sin_project/dto/DTOMapperImpl.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.DTOMapperImpl" name="contractToDto" signature="(Lcom/example/sin_project/entity/Contract;)Lcom/example/sin_project/dto/ContractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.DTOMapperImpl" start="104" end="118" startBytecode="0" endBytecode="32" sourcefile="DTOMapperImpl.java" sourcepath="com/example/sin_project/dto/DTOMapperImpl.java"/>
+    </Method>
+    <LocalVariable name="dto" register="2" pc="11" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.example.sin_project.dto.DTOMapperImpl" start="110" end="110" startBytecode="12" endBytecode="12" sourcefile="DTOMapperImpl.java" sourcepath="com/example/sin_project/dto/DTOMapperImpl.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF_NONVIRTUAL" priority="1" rank="6" abbrev="NP" category="CORRECTNESS">
+    <Class classname="com.example.sin_project.dto.DTOMapperImpl">
+      <SourceLine classname="com.example.sin_project.dto.DTOMapperImpl" sourcefile="DTOMapperImpl.java" sourcepath="com/example/sin_project/dto/DTOMapperImpl.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.DTOMapperImpl" name="contractToDto" signature="(Lcom/example/sin_project/entity/Contract;)Lcom/example/sin_project/dto/ContractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.DTOMapperImpl" start="104" end="118" startBytecode="0" endBytecode="175" sourcefile="DTOMapperImpl.java" sourcepath="com/example/sin_project/dto/DTOMapperImpl.java"/>
+    </Method>
+    <Method classname="com.example.sin_project.dto.ContractDTO" name="&lt;init&gt;" signature="(Lcom/example/sin_project/dto/ContractDTO;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.example.sin_project.dto.ContractDTO" start="16" end="20" startBytecode="0" endBytecode="97" sourcefile="ContractDTO.java" sourcepath="com/example/sin_project/dto/ContractDTO.java"/>
+    </Method>
+    <SourceLine classname="com.example.sin_project.dto.DTOMapperImpl" start="110" end="110" startBytecode="13" endBytecode="13" sourcefile="DTOMapperImpl.java" sourcepath="com/example/sin_project/dto/DTOMapperImpl.java"/>
+    <LocalVariable name="dto" register="2" pc="12" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Int value="1" role="INT_NULL_ARG"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ACTUAL_PARAMETER_GUARANTEED_NULL" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ALL_DANGEROUS_TARGETS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.ARG_DEFINITELY_NULL" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullArgumentWarningProperty.MONOMORPHIC_CALL_SITE" value="true"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.dto.LibraryDTO">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.LibraryDTO" name="clone" signature="()Lcom/example/sin_project/dto/AbstractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" start="24" end="24" startBytecode="0" endBytecode="50" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.LibraryDTO">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.LibraryDTO" name="getBooks" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" start="16" end="16" startBytecode="0" endBytecode="46" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.LibraryDTO" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.LibraryDTO" start="16" end="16" startBytecode="4" endBytecode="4" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.LibraryDTO">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.LibraryDTO" name="setBooks" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" start="12" end="12" startBytecode="0" endBytecode="75" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.LibraryDTO" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.LibraryDTO" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+    </Field>
+    <LocalVariable name="books" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.LibraryDTO" start="12" end="12" startBytecode="2" endBytecode="2" sourcefile="LibraryDTO.java" sourcepath="com/example/sin_project/dto/LibraryDTO.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.dto.PublishingHouseDTO">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.PublishingHouseDTO" name="clone" signature="()Lcom/example/sin_project/dto/AbstractDTO;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="26" end="26" startBytecode="0" endBytecode="50" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.PublishingHouseDTO">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.PublishingHouseDTO" name="getBooks" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="16" end="16" startBytecode="0" endBytecode="46" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.PublishingHouseDTO" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="16" end="16" startBytecode="4" endBytecode="4" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.PublishingHouseDTO">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.PublishingHouseDTO" name="getContracts" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="17" end="17" startBytecode="0" endBytecode="46" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.PublishingHouseDTO" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="17" end="17" startBytecode="4" endBytecode="4" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.PublishingHouseDTO">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.PublishingHouseDTO" name="setBooks" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="12" end="12" startBytecode="0" endBytecode="75" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.PublishingHouseDTO" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Field>
+    <LocalVariable name="books" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="12" end="12" startBytecode="2" endBytecode="2" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.dto.PublishingHouseDTO">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.dto.PublishingHouseDTO" name="setContracts" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="12" end="12" startBytecode="0" endBytecode="75" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.dto.PublishingHouseDTO" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+    </Field>
+    <LocalVariable name="contracts" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.dto.PublishingHouseDTO" start="12" end="12" startBytecode="2" endBytecode="2" sourcefile="PublishingHouseDTO.java" sourcepath="com/example/sin_project/dto/PublishingHouseDTO.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.dto.request.addBookToLibraryRequest">
+      <SourceLine classname="com.example.sin_project.dto.request.addBookToLibraryRequest" start="8" end="11" sourcefile="addBookToLibraryRequest.java" sourcepath="com/example/sin_project/dto/request/addBookToLibraryRequest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Author">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Author" name="getBooks" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" start="22" end="22" startBytecode="0" endBytecode="46" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Author" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Author" start="22" end="22" startBytecode="4" endBytecode="4" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Author">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Author" name="getContracts" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" start="25" end="25" startBytecode="0" endBytecode="46" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Author" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Author" start="25" end="25" startBytecode="4" endBytecode="4" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Author">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Author" name="setBooks" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" start="15" end="15" startBytecode="0" endBytecode="75" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Author" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Field>
+    <LocalVariable name="books" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Author" start="15" end="15" startBytecode="2" endBytecode="2" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Author">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Author" name="setContracts" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" start="15" end="15" startBytecode="0" endBytecode="75" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Author" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Author" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Field>
+    <LocalVariable name="contracts" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Author" start="15" end="15" startBytecode="2" endBytecode="2" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.entity.Author">
+      <SourceLine classname="com.example.sin_project.entity.Author" start="15" end="39" sourcefile="Author.java" sourcepath="com/example/sin_project/entity/Author.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="getAuthor" signature="()Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="31" end="31" startBytecode="0" endBytecode="46" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="31" end="31" startBytecode="4" endBytecode="4" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="getLibrary" signature="()Lcom/example/sin_project/entity/Library;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="35" end="35" startBytecode="0" endBytecode="46" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="library" signature="Lcom/example/sin_project/entity/Library;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="35" end="35" startBytecode="4" endBytecode="4" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="getPublished" signature="()Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="23" end="23" startBytecode="0" endBytecode="46" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="published" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="23" end="23" startBytecode="4" endBytecode="4" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="getPublishingHouse" signature="()Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="27" end="27" startBytecode="0" endBytecode="46" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="27" end="27" startBytecode="4" endBytecode="4" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="setAuthor" signature="(Lcom/example/sin_project/entity/Author;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="16" startBytecode="0" endBytecode="57" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <LocalVariable name="author" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="16" startBytecode="2" endBytecode="2" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="setLibrary" signature="(Lcom/example/sin_project/entity/Library;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="16" startBytecode="0" endBytecode="57" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="library" signature="Lcom/example/sin_project/entity/Library;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <LocalVariable name="library" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="16" startBytecode="2" endBytecode="2" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Book" name="setPublishingHouse" signature="(Lcom/example/sin_project/entity/PublishingHouse;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="16" startBytecode="0" endBytecode="57" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Book" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Book" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Field>
+    <LocalVariable name="publishingHouse" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="16" startBytecode="2" endBytecode="2" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.entity.Book">
+      <SourceLine classname="com.example.sin_project.entity.Book" start="16" end="50" sourcefile="Book.java" sourcepath="com/example/sin_project/entity/Book.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Contract">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Contract" name="getAuthor" signature="()Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" start="18" end="18" startBytecode="0" endBytecode="46" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Contract" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Contract" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Contract">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Contract" name="getPublishingHouse" signature="()Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" start="21" end="21" startBytecode="0" endBytecode="46" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Contract" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Contract" start="21" end="21" startBytecode="4" endBytecode="4" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Contract">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Contract" name="setAuthor" signature="(Lcom/example/sin_project/entity/Author;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" start="14" end="14" startBytecode="0" endBytecode="57" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Contract" name="author" signature="Lcom/example/sin_project/entity/Author;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Field>
+    <LocalVariable name="author" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Contract" start="14" end="14" startBytecode="2" endBytecode="2" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Contract">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Contract" name="setPublishingHouse" signature="(Lcom/example/sin_project/entity/PublishingHouse;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" start="14" end="14" startBytecode="0" endBytecode="57" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Contract" name="publishingHouse" signature="Lcom/example/sin_project/entity/PublishingHouse;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Contract" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Field>
+    <LocalVariable name="publishingHouse" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Contract" start="14" end="14" startBytecode="2" endBytecode="2" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.entity.Contract">
+      <SourceLine classname="com.example.sin_project.entity.Contract" start="14" end="27" sourcefile="Contract.java" sourcepath="com/example/sin_project/entity/Contract.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Library">
+      <SourceLine classname="com.example.sin_project.entity.Library" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Library" name="getBooks" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Library" start="19" end="19" startBytecode="0" endBytecode="46" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Library" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Library" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.Library" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.Library">
+      <SourceLine classname="com.example.sin_project.entity.Library" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.Library" name="setBooks" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Library" start="15" end="15" startBytecode="0" endBytecode="75" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.Library" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.Library" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Field>
+    <LocalVariable name="books" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.Library" start="15" end="15" startBytecode="2" endBytecode="2" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.entity.Library">
+      <SourceLine classname="com.example.sin_project.entity.Library" start="15" end="31" sourcefile="Library.java" sourcepath="com/example/sin_project/entity/Library.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.PublishingHouse">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.PublishingHouse" name="getBooks" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="20" end="20" startBytecode="0" endBytecode="46" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.PublishingHouse" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="20" end="20" startBytecode="4" endBytecode="4" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.PublishingHouse">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.PublishingHouse" name="getContracts" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="23" end="23" startBytecode="0" endBytecode="46" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.PublishingHouse" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Field>
+    <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="23" end="23" startBytecode="4" endBytecode="4" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.PublishingHouse">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.PublishingHouse" name="setBooks" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="16" end="16" startBytecode="0" endBytecode="75" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.PublishingHouse" name="books" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Field>
+    <LocalVariable name="books" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="16" end="16" startBytecode="2" endBytecode="2" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.example.sin_project.entity.PublishingHouse">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Class>
+    <Method classname="com.example.sin_project.entity.PublishingHouse" name="setContracts" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="16" end="16" startBytecode="0" endBytecode="75" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Method>
+    <Field classname="com.example.sin_project.entity.PublishingHouse" name="contracts" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Field>
+    <LocalVariable name="contracts" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="16" end="16" startBytecode="2" endBytecode="2" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="com.example.sin_project.entity.PublishingHouse">
+      <SourceLine classname="com.example.sin_project.entity.PublishingHouse" start="14" end="28" sourcefile="PublishingHouse.java" sourcepath="com/example/sin_project/entity/PublishingHouse.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.springframework.boot.SpringApplication</MissingClass>
+    <MissingClass>org.springframework.data.repository.CrudRepository</MissingClass>
+    <MissingClass>org.springframework.http.ResponseEntity</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 25 Dec 2022 18:22:56 +0100" total_classes="47" referenced_classes="97" total_bugs="55" total_size="705" num_packages="12" java_version="11.0.14.1" vm_version="11.0.14.1+10-LTS" cpu_seconds="69.81" clock_seconds="815.53" peak_mbytes="273.04" alloc_mbytes="768.00" gc_seconds="0.08" priority_3="6" priority_2="48" priority_1="1">
+    <PackageStats package="com.example.sin_project" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="com.example.sin_project.SinProjectApplication" sourceFile="SinProjectApplication.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.conotroller" total_bugs="3" total_types="5" total_size="56" priority_2="3">
+      <ClassStats class="com.example.sin_project.conotroller.AuthorController" sourceFile="AuthorController.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="com.example.sin_project.conotroller.BookController" sourceFile="BookController.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.sin_project.conotroller.ContractController" sourceFile="ContractController.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.example.sin_project.conotroller.LibraryController" sourceFile="LibraryController.java" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="com.example.sin_project.conotroller.PublishingHouseController" sourceFile="PublishingHouseController.java" interface="false" size="12" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.dto" total_bugs="25" total_types="8" total_size="208" priority_3="1" priority_2="23" priority_1="1">
+      <ClassStats class="com.example.sin_project.dto.AbstractDTO" sourceFile="AbstractDTO.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.AuthorDTO" sourceFile="AuthorDTO.java" interface="false" size="26" bugs="5" priority_2="5"/>
+      <ClassStats class="com.example.sin_project.dto.BookDTO" sourceFile="BookDTO.java" interface="false" size="33" bugs="5" priority_2="5"/>
+      <ClassStats class="com.example.sin_project.dto.ContractDTO" sourceFile="ContractDTO.java" interface="false" size="24" bugs="5" priority_2="5"/>
+      <ClassStats class="com.example.sin_project.dto.DTOMapper" sourceFile="DTOMapper.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.DTOMapperImpl" sourceFile="DTOMapperImpl.java" interface="false" size="62" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="com.example.sin_project.dto.LibraryDTO" sourceFile="LibraryDTO.java" interface="false" size="16" bugs="3" priority_2="3"/>
+      <ClassStats class="com.example.sin_project.dto.PublishingHouseDTO" sourceFile="PublishingHouseDTO.java" interface="false" size="21" bugs="5" priority_2="5"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.dto.request" total_bugs="1" total_types="9" total_size="102" priority_2="1">
+      <ClassStats class="com.example.sin_project.dto.request.AuthorRequest" sourceFile="AuthorRequest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.AuthorRequest$AuthorRequestBuilder" sourceFile="AuthorRequest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.BookRequest" sourceFile="BookRequest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.BookRequest$BookRequestBuilder" sourceFile="BookRequest.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.ContractRequest" sourceFile="ContractRequest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.ContractRequest$ContractRequestBuilder" sourceFile="ContractRequest.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.LibraryRequest" sourceFile="LibraryRequest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.PublishingHouseRequest" sourceFile="PublishingHouseRequest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.example.sin_project.dto.request.addBookToLibraryRequest" sourceFile="addBookToLibraryRequest.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.entity" total_bugs="26" total_types="6" total_size="119" priority_3="5" priority_2="21">
+      <ClassStats class="com.example.sin_project.entity.AbstractEntity" sourceFile="AbstractEntity.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.example.sin_project.entity.Author" sourceFile="Author.java" interface="false" size="24" bugs="5" priority_3="1" priority_2="4"/>
+      <ClassStats class="com.example.sin_project.entity.Book" sourceFile="Book.java" interface="false" size="32" bugs="8" priority_3="1" priority_2="7"/>
+      <ClassStats class="com.example.sin_project.entity.Contract" sourceFile="Contract.java" interface="false" size="20" bugs="5" priority_3="1" priority_2="4"/>
+      <ClassStats class="com.example.sin_project.entity.Library" sourceFile="Library.java" interface="false" size="15" bugs="3" priority_3="1" priority_2="2"/>
+      <ClassStats class="com.example.sin_project.entity.PublishingHouse" sourceFile="PublishingHouse.java" interface="false" size="16" bugs="5" priority_3="1" priority_2="4"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.exception" total_bugs="0" total_types="3" total_size="18">
+      <ClassStats class="com.example.sin_project.exception.FieldInvalidException" sourceFile="FieldInvalidException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.example.sin_project.exception.FieldMissingException" sourceFile="FieldMissingException.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.example.sin_project.exception.NotFoundException" sourceFile="NotFoundException.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.repository" total_bugs="0" total_types="5" total_size="21">
+      <ClassStats class="com.example.sin_project.repository.AuthorRepository" sourceFile="AuthorRepository.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.example.sin_project.repository.BookRepository" sourceFile="BookRepository.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.example.sin_project.repository.ContractRepository" sourceFile="ContractRepository.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.example.sin_project.repository.LibraryRepository" sourceFile="LibraryRepository.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.example.sin_project.repository.PublishingHouseRepository" sourceFile="PublishingHouseRepository.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.service.author" total_bugs="0" total_types="2" total_size="41">
+      <ClassStats class="com.example.sin_project.service.author.AuthorService" sourceFile="AuthorService.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.example.sin_project.service.author.AuthorServiceImp" sourceFile="AuthorServiceImp.java" interface="false" size="36" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.service.book" total_bugs="0" total_types="2" total_size="19">
+      <ClassStats class="com.example.sin_project.service.book.BookService" sourceFile="BookService.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.example.sin_project.service.book.BookServiceImp" sourceFile="BookServiceImp.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.service.contract" total_bugs="0" total_types="2" total_size="33">
+      <ClassStats class="com.example.sin_project.service.contract.ContractService" sourceFile="ContractService.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.example.sin_project.service.contract.ContractServiceImp" sourceFile="ContractServiceImp.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.service.library" total_bugs="0" total_types="2" total_size="30">
+      <ClassStats class="com.example.sin_project.service.library.LibraryService" sourceFile="LibraryService.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.example.sin_project.service.library.LibraryServiceImp" sourceFile="LibraryServiceImp.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.example.sin_project.service.publishingHouse" total_bugs="0" total_types="2" total_size="52">
+      <ClassStats class="com.example.sin_project.service.publishingHouse.PublishingHouseService" sourceFile="PublishingHouseService.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.example.sin_project.service.publishingHouse.PublishingHouseServiceImp" sourceFile="PublishingHouseServiceImp.java" interface="false" size="47" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="622" invocations="2" avgMicrosecondsPerInvocation="311481" maxMicrosecondsPerInvocation="364821" standardDeviationMicrosecondsPerInvocation="53340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="556" invocations="680" avgMicrosecondsPerInvocation="818" maxMicrosecondsPerInvocation="24354" standardDeviationMicrosecondsPerInvocation="2173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="226" invocations="97" avgMicrosecondsPerInvocation="2335" maxMicrosecondsPerInvocation="36588" standardDeviationMicrosecondsPerInvocation="5766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="169" invocations="361" avgMicrosecondsPerInvocation="470" maxMicrosecondsPerInvocation="50150" standardDeviationMicrosecondsPerInvocation="2726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="164" invocations="97" avgMicrosecondsPerInvocation="1692" maxMicrosecondsPerInvocation="27635" standardDeviationMicrosecondsPerInvocation="3737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="151" invocations="206" avgMicrosecondsPerInvocation="735" maxMicrosecondsPerInvocation="7127" standardDeviationMicrosecondsPerInvocation="1278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="132" invocations="686" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="7823" standardDeviationMicrosecondsPerInvocation="419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="125" invocations="195" avgMicrosecondsPerInvocation="642" maxMicrosecondsPerInvocation="11585" standardDeviationMicrosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="119" invocations="148" avgMicrosecondsPerInvocation="810" maxMicrosecondsPerInvocation="10135" standardDeviationMicrosecondsPerInvocation="1915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="117" invocations="47" avgMicrosecondsPerInvocation="2506" maxMicrosecondsPerInvocation="14161" standardDeviationMicrosecondsPerInvocation="3259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="106" invocations="206" avgMicrosecondsPerInvocation="517" maxMicrosecondsPerInvocation="7395" standardDeviationMicrosecondsPerInvocation="1032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="98" invocations="206" avgMicrosecondsPerInvocation="479" maxMicrosecondsPerInvocation="7619" standardDeviationMicrosecondsPerInvocation="849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="98" invocations="97" avgMicrosecondsPerInvocation="1016" maxMicrosecondsPerInvocation="59037" standardDeviationMicrosecondsPerInvocation="5985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="94" invocations="195" avgMicrosecondsPerInvocation="483" maxMicrosecondsPerInvocation="12618" standardDeviationMicrosecondsPerInvocation="1168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="91" invocations="206" avgMicrosecondsPerInvocation="444" maxMicrosecondsPerInvocation="6664" standardDeviationMicrosecondsPerInvocation="876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="78" invocations="611" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="7087" standardDeviationMicrosecondsPerInvocation="447"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="71" invocations="47" avgMicrosecondsPerInvocation="1516" maxMicrosecondsPerInvocation="9198" standardDeviationMicrosecondsPerInvocation="1990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="70" invocations="97" avgMicrosecondsPerInvocation="723" maxMicrosecondsPerInvocation="12682" standardDeviationMicrosecondsPerInvocation="1610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="67" invocations="47" avgMicrosecondsPerInvocation="1430" maxMicrosecondsPerInvocation="13694" standardDeviationMicrosecondsPerInvocation="2930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="66" invocations="97" avgMicrosecondsPerInvocation="680" maxMicrosecondsPerInvocation="17422" standardDeviationMicrosecondsPerInvocation="2067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="60" invocations="233" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="21066" standardDeviationMicrosecondsPerInvocation="1405"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="59" invocations="127" avgMicrosecondsPerInvocation="471" maxMicrosecondsPerInvocation="4718" standardDeviationMicrosecondsPerInvocation="922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="54" invocations="97" avgMicrosecondsPerInvocation="558" maxMicrosecondsPerInvocation="25723" standardDeviationMicrosecondsPerInvocation="2668"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

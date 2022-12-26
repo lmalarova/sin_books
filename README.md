@@ -17,6 +17,9 @@ src/main/java/com/example/sin_project/service
 src/test/java/com/example/sin_project/service
 
 Cvicenie 4:
+- Static code analysis (SpotBugs):
+  - before: src/test/test_results/before
+  - after: src/test/test_results/after
 - Controllers:
 src/main/java/com/example/sin_project/controller
 - Interceptors:
