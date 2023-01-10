@@ -2,7 +2,6 @@ package com.example.sin_project.entity;
 
 import com.example.sin_project.dto.request.ContractRequest;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
